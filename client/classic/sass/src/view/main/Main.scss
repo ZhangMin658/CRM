@@ -1,0 +1,122 @@
+.app-title {
+  font-size: 2em;
+}
+
+.header {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.main {
+  margin: 0 10px 0;
+  border-right: 1px solid #d0d0d0;
+  border-left: 1px solid #d0d0d0;
+}
+
+.footer {
+  border-top: 1px solid #d0d0d0;
+}
+
+.cell-icon {
+  margin-left: 4px;
+}
+
+.cell-editing-delete-row:before {
+  @extend .cell-icon;
+  font: 16px/1 FontAwesome;
+  //color: #dd6550;
+  color: #FF5722;
+  content: "\f056";
+}
+
+.cell-edit-row:before {
+  @extend .cell-icon;
+  font: 16px/1 FontAwesome;
+  //color: #4078c0;
+  color: #616161;
+  content: "\f044";
+}
+
+.framing-buttons-add:before {
+  font: 16px/1 FontAwesome;
+  //color: #81cb31;
+  color: #4CAF50;
+  content: "\f055";
+}
+
+@include treelist-ui(
+        $ui: 'nav',
+
+          // Extra padding left/right
+        $padding: 0 10px,
+
+          // Black-ish background color
+        //$background-color: #32404e,
+        $background-color: rgb(249, 247, 245),
+        $toolstrip-background-color: rgb(249, 247, 245),
+
+        $tool-selected-color: #f0f0f0,
+        $tool-selected-background-color: #FF5722,
+
+        $tool-float-indicator-width: 4px,
+        $tool-float-indicator-color: #FF5722,
+
+          // Darker background for expanded subtrees
+        $item-expanded-background-color: rgb(249, 247, 245),
+
+          // Taller line height
+        $item-line-height : 36px,
+
+          // Off-white text
+        $item-icon-color: #616161,
+        $item-expander-color: #616161,
+        $item-text-color: #616161,
+
+          // Brighter when hovered
+        $row-over-background-color: #efedeb,
+        $item-icon-over-color: #616161,
+        $item-expander-over-color: #616161,
+        $item-text-over-color: #616161,
+
+        $row-indicator-width: 6px,
+        $row-indicator-selected-color: #FF5722,
+        $row-indicator-selected-over-color: lighten(#FF5722, 10%),
+        $row-indicator-over-color: lighten(#FF5722, 10%),
+
+          // Various sizes for the pieces:
+        $item-icon-font-size: 18px,
+        $item-icon-width: 24px,
+        $item-expander-font-size: 16px,
+        $item-expander-width: 24px,
+
+        $row-selected-background-color: #e9e7e5
+);
+
+.treelist-with-nav .#{$prefix}panel-body {
+  background-color: #e9e7e5;
+  text-shadow: 0px 1px 1px #fff;
+}
+
+.x-treelist-expander-first .x-treelist-item-text {
+  margin-left: 48px !important;
+}
+
+.x-treelist-nav .x-treelist-item-text {
+  font-size: 14px;
+}
+
+.people-detail .x-panel-body-default {
+  background-color: #f9f7f5 !important;
+  //color: #4e595d !important;
+}
+
+.detail-container {
+  background-color: #fff;
+  box-shadow: #c7cdcf 0 1px 0 0;
+  border-radius: 3px;
+
+  //.caption {
+  //  color: #204dcc;
+  //  //font-size: 1.1em;
+  //  //margin-bottom: 10px;
+  //}
+}

@@ -1,0 +1,27 @@
+{
+    "framework": "jasmine",
+    "libs": [],
+    "coverageFilters": [
+        {
+            "disabled": false,
+            "path": "^/ext/.*?$"
+        }
+    ],
+    "scenarios": [
+        {
+            "libs": [],
+            "coverageFilters": [],
+            "directory": "function",
+            "name": "Function Tests",
+            "launch": true
+        },
+        {
+            "libs": [],
+            "coverageFilters": [],
+            "directory": "Unit_Tests",
+            "name": "Unit Tests"
+        }
+    ],
+    "globals": "SenchaCRM\n",
+    "launchAppWatch": false
+}

@@ -1,0 +1,38 @@
+{
+    "frameworks": {
+        "ext": {
+            "path":"ext",
+            "version":"6.5.2.463"
+        }
+        
+    },
+    "build": {
+        "dir": "${workspace.dir}/build"
+    },
+    "packages": {
+        "dir": "${workspace.dir}/packages/local,${workspace.dir}/packages",
+        "extract": "${workspace.dir}/packages/remote"
+    },
+    "name": "Client",
+    "tests": {
+        "browser": {
+            "farms": [
+                {
+                    "name": "local",
+                    "type": "generic",
+                    "host": "127.0.0.1",
+                    "port": 4444,
+                    "autoStartTunnel": false,
+                    "pools": [
+                        {
+                            "name": "local",
+                            "path": "test/local.json"
+                        }
+                    ]
+                }
+            ]
+        },
+        "archiveRoot": "/senchacrm",
+        "archiveServer": "http://localhost:1903"
+    }
+}

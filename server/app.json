@@ -1,0 +1,7 @@
+{
+  "name": "SenchaCRM",
+  "description": "CRM application powered by latest Sencha web technologies.",
+  "repository": "https://github.com/shinobukawano/SenchaCRM",
+  "logo": "http://senchacrm.com/images/logo.png",
+  "keywords": ["sencha", "html5", "spring boot", "java", "javascript"]
+}

@@ -1,0 +1,17 @@
+server:
+  port: 8088
+spring:
+    datasource:
+      driverClassName: org.postgresql.Driver
+      platform: postgres
+      url: jdbc:postgresql://localhost:5432/senchacrm
+      username: shinobukawano
+      password:
+#      driverClassName: org.h2.Driver
+#      url: jdbc:h2:file:/tmp/senchacrm
+    jpa:
+      show-sql: true
+      database: POSTGRESQL
+      hibernate:
+        ddl-auto: create-drop
+

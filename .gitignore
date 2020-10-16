@@ -1,0 +1,23 @@
+# Tools
+.settings
+.classpath
+.project
+.idea
+.DS_Store
+sencha-crm.iml
+
+# Java
+target
+
+# Sencha
+client/ext
+client/build
+client/bootstrap.css
+client/bootstrap.js
+client/classic.json
+client/modern.json
+client/.tern-port
+
+# Deploy
+server/src/main/resources/public/build
+
